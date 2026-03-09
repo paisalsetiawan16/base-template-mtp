@@ -1,0 +1,24 @@
+{
+  "appId": "com.tailadmin.app",
+  "productName": "TailAdmin",
+  "directories": {
+    "output": "out"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": ["nsis"],
+    "icon": "public/icon.ico"
+  },
+  "mac": {
+    "target": ["dmg"],
+    "icon": "public/icon.icns"
+  },
+  "linux": {
+    "target": ["AppImage"],
+    "icon": "public/icon.png"
+  }
+}
